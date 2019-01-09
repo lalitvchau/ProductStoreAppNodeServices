@@ -1,0 +1,24 @@
+{
+  "name": "productStoreNodeServicesCaseStudy",
+  "version": "1.0.0",
+  "description": "THis project provide res service for products",
+  "main": "index.js",
+  "scripts": {
+    "build-and-run":"babel-node index.js",
+    "debug":"babel-node debug index.js"
+  },
+  "keywords": ["Node","Rest Services"],
+  "author": "Lalit",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.13",
+    "socket.io": "^2.1.1"
+  }
+}

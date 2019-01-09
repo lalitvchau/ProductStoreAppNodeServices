@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Product Node Server</title>
+</head>
+
+<body>
+    <script src='lib/socket.io.js'></script>
+    <script>
+        var socketClient = io.connect('http://localhost:9090');
+
+        if (socketClient) {
+            console.log('Socket Client Connected ...');
+
+            socketClient.on('NewProductRecord',
+                function (data) {
+                    console.log('Push Notification Message Received ... ' + JSON.stringify(data));
+                });
+        }
+    </script>
+
+    <h1>Welcome to Product Node Server  ... !</h1>
+</body>
+
+</html>
